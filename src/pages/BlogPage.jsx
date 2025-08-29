@@ -4,7 +4,6 @@ import {posts} from '../dummy-data/dummy-post.js';
 import PostCard from '../components/PostCard.jsx';
 import {useSearchParams} from 'react-router-dom';
 import BlogFilter from '../components/BlogFilter.jsx';
-import BlogSideBar from '../components/BlogSideBar.jsx';
 
 const BlogPage = () => {
 
@@ -33,7 +32,7 @@ const BlogPage = () => {
       <div className={styles.blog}>
 
         <BlogFilter />
-        
+
         <div className={styles.grid}>
           {posts
             // 제목 또는 내용으로 검색
