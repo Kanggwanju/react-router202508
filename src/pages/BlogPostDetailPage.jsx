@@ -13,6 +13,9 @@ const BlogPostDetailPage = () => {
   // 지금은 서버 x, 더미데이터에서 특정 블로그 글 탐색
   const foundPost = posts.find(post => post.id === +postId);
   // console.log(foundPost);
+  if (!foundPost) {
+    throw new Error('존재하지 않는 포스트입니다.');
+  }
 
   const post = {
     ...foundPost,
