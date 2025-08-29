@@ -1,12 +1,30 @@
-# React + Vite
+# 리액트 앱 실행하기
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 명령 프롬프트
+1. nodejs 설치
+2. `npm create vite@latest 프로젝트폴더명`
+    - proceed(y) -> React -> Javascript 선택
+3. `cd 프로젝트폴더명` -> `npm install` -> `npm run dev`
 
-Currently, two official plugins are available:
+## 인텔리제이 `유료`
+- 새 프로젝트
+- 제너레이터 Vite 선택
+- 이름: react-router202508
+- 템플릿: react
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 깃허브에서 클론한 리액트 프로젝트인 경우
+1. `git clone`
+2. `npm intall` <- 최초 1번
+3. `npm run dev` <- 프론트엔드 서버 실행 (서버켤 때마다 실행)
 
-## Expanding the ESLint configuration
+- 서버 끌때는 터미널에서 Ctrl + C, Ctrl + Z
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## React Router
+```shell
+npm install react-router-dom
+```
+
+## scss
+```shell
+npm install sass
+```
